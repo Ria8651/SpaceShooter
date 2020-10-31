@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373af398d5ca1410ca445ee8358c826c, type: 3}
+  m_Name: Moon shape
+  m_EditorClassIdentifier: 
+  planetRadius: 100
+  noiseLayers:
+  - enabled: 1
+    useFirstLayerAsMask: 0
+    noiseSettings:
+      filterType: 0
+      simpleNoiseSettings:
+        strength: 0.1
+        numLayers: 5
+        baseRoughness: 1.6
+        roughness: 2.77
+        persistance: 0.3
+        centre: {x: 4465.27, y: 97, z: 0}
+        minValue: 0
+      ridgedNoiseSettings:
+        strength: 1
+        numLayers: 1
+        baseRoughness: 1
+        roughness: 2
+        persistance: 0.5
+        centre: {x: 0, y: 0, z: 0}
+        minValue: 0
+        weightMultiplyer: 0.8
+  - enabled: 1
+    useFirstLayerAsMask: 0
+    noiseSettings:
+      filterType: 0
+      simpleNoiseSettings:
+        strength: -3.43
+        numLayers: 1
+        baseRoughness: -0.31
+        roughness: 2
+        persistance: 0.5
+        centre: {x: 9.3, y: 0, z: 0}
+        minValue: 0.94
+      ridgedNoiseSettings:
+        strength: 6.31
+        numLayers: 4
+        baseRoughness: 1.38
+        roughness: 2.56
+        persistance: 0.67
+        centre: {x: -3.94, y: -0.05, z: 0}
+        minValue: 0.52
+        weightMultiplyer: 4.59
+  - enabled: 1
+    useFirstLayerAsMask: 0
+    noiseSettings:
+      filterType: 1
+      simpleNoiseSettings:
+        strength: -3.43
+        numLayers: 1
+        baseRoughness: -0.31
+        roughness: 2
+        persistance: 0.5
+        centre: {x: 9.3, y: 0, z: 0}
+        minValue: 0.94
+      ridgedNoiseSettings:
+        strength: -0.21
+        numLayers: 2
+        baseRoughness: 0.81
+        roughness: 1.69
+        persistance: 0.53
+        centre: {x: -3.94, y: -0.05, z: 0}
+        minValue: 1.25
+        weightMultiplyer: 4.63
